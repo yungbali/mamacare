@@ -1,21 +1,18 @@
 /** @type {import('next').NextConfig} */
+import { join, dirname } from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = dirname(fileURLToPath(import.meta.url));
+
 const nextConfig = {
   output: 'standalone',
   images: {
     unoptimized: true,
+    domains: ['localhost']
   },
-  typescript: {
-    ignoreBuildErrors: true
-  },
-  eslint: {
-    ignoreDuringBuilds: true
-  },
-  webpack: (config) => {
-    config.resolve.alias = {
-      ...config.resolve.alias,
-      'swiper/css': 'swiper/swiper.min.css'
-    };
-    return config;
+  sassOptions: {
+    includePaths: [join(__dirname, 'src/styles')],
+    prependData: `@import "base/variables";`
   }
 };
 
