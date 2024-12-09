@@ -3,7 +3,7 @@ import { Metadata } from 'next';
 import React from 'react'
 import dynamic from 'next/dynamic'
 
-const Resources = dynamic(() => import('@/components/resources'), {
+const Resources = dynamic(() => import('@/components/pages/Resources'), {
   ssr: true
 })
 

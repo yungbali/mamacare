@@ -16,12 +16,35 @@ interface CountDataType {
 }
 
 const coundet_data: CountDataType[] = [
-  { id: 1, number: 200, icon: counter_img_1, text: "+", title: "Team member" },
-  { id: 2, number: 300, icon: counter_img_2, text: "k+", title: "Winning award" },
-  { id: 2, number: 100, icon: counter_img_3, text: "+", title: "Complete project" },
-  { id: 2, number: 900, icon: counter_img_4, text: "+", title: "Client review" },
+  { 
+    id: 1, 
+    number: 500, 
+    icon: counter_img_1, 
+    text: "+", 
+    title: "Mothers Supported" 
+  },
+  { 
+    id: 2, 
+    number: 95, 
+    icon: counter_img_2, 
+    text: "%", 
+    title: "Recovery Rate" 
+  },
+  { 
+    id: 3, 
+    number: 24, 
+    icon: counter_img_3, 
+    text: "/7", 
+    title: "Support Available" 
+  },
+  { 
+    id: 4, 
+    number: 100, 
+    icon: counter_img_4, 
+    text: "%", 
+    title: "Satisfaction Rate" 
+  },
 ]
-
 
 interface PropsType {
   style_2?: boolean
@@ -30,7 +53,7 @@ interface PropsType {
 export default function CounterHomeOne({ style_2 }: PropsType) {
   return (
     <>
-      <section className={` position-relative ${style_2 ? "counter-section02" : "counter-section"}`}>
+      <section className={`position-relative ${style_2 ? "counter-section02" : "counter-section"}`}>
         <div className="container">
           <div className="counter-version-wrapv1 d-flex align-items-center justify-content-between gap-4">
             {coundet_data.map((item, i) => (
@@ -57,15 +80,11 @@ export default function CounterHomeOne({ style_2 }: PropsType) {
                       <p>{item.title}</p>
                     </div>
                   </>
-
                 }
-
               </div>
             ))}
- 
 
-            {
-              style_2 &&
+            {style_2 &&
               <>
                 <img src="assets/img/element/count-flower-left.png" alt="img" className="cout-flower-left" />
                 <img src="assets/img/element/count-flower-right.png" alt="img" className="cout-flower-right" />
