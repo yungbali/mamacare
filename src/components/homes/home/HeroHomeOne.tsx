@@ -33,7 +33,13 @@ export default function HeroHomeOne() {
                     Supportive Mother's Community
                   </li>
                 </ul>
-                <Link href="/about" className="cmn-btn round100 wow fadeInUp" data-wow-delay="0.9s">
+                <Link 
+                  href="https://forms.gle/YFevT5XgQy4EFBySA" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="cmn-btn round100 wow fadeInUp" 
+                  data-wow-delay="0.9s"
+                >
                   Book Your Free Consultation
                   <i className="fa-solid fa-arrow-right"></i>
                 </Link>
