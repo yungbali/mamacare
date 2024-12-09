@@ -15,34 +15,34 @@ interface CountDataType {
   title: string;
 }
 
-const coundet_data: CountDataType[] = [
+const counter_data: CountDataType[] = [
   { 
     id: 1, 
-    number: 500, 
+    number: 1000, 
     icon: counter_img_1, 
     text: "+", 
     title: "Mothers Supported" 
   },
   { 
     id: 2, 
-    number: 95, 
+    number: 92, 
     icon: counter_img_2, 
     text: "%", 
-    title: "Recovery Rate" 
+    title: "Recovery Success" 
   },
   { 
     id: 3, 
     number: 24, 
     icon: counter_img_3, 
     text: "/7", 
-    title: "Support Available" 
+    title: "Crisis Support" 
   },
   { 
     id: 4, 
-    number: 100, 
+    number: 15, 
     icon: counter_img_4, 
-    text: "%", 
-    title: "Satisfaction Rate" 
+    text: "+", 
+    title: "Expert Therapists" 
   },
 ]
 
@@ -56,7 +56,7 @@ export default function CounterHomeOne({ style_2 }: PropsType) {
       <section className={`position-relative ${style_2 ? "counter-section02" : "counter-section"}`}>
         <div className="container">
           <div className="counter-version-wrapv1 d-flex align-items-center justify-content-between gap-4">
-            {coundet_data.map((item, i) => (
+            {counter_data.map((item, i) => (
               <div key={i} className={`counter-items ${style_2 ? "style02" : ""}`}>
                 {style_2 ?
                   <>

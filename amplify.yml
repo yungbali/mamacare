@@ -5,6 +5,7 @@ applications:
         preBuild:
           commands:
             - npm ci
+            - npm install sharp swiper
         build:
           commands:
             - npm run build

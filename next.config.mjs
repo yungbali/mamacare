@@ -9,6 +9,13 @@ const nextConfig = {
   },
   eslint: {
     ignoreDuringBuilds: true
+  },
+  webpack: (config) => {
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      'swiper/css': 'swiper/swiper.min.css'
+    };
+    return config;
   }
 };
 
