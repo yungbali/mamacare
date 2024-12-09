@@ -1,0 +1,7 @@
+.pricing-itemsv1.active {
+  background: var(--accent-gradient);
+}
+
+.price-badge {
+  background: var(--primary-gradient);
+} 

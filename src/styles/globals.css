@@ -1,0 +1,6 @@
+:root {
+  --primary-gradient: linear-gradient(135deg, #F8BBD0 0%, #E1BEE7 100%);
+  --primary-light: #F8BBD0;  /* Pink */
+  --primary-dark: #E1BEE7;   /* Purple */
+  --accent-gradient: linear-gradient(135deg, #E1BEE7 0%, #D1C4E9 100%);
+} 

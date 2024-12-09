@@ -1,0 +1,13 @@
+.cmn-btn {
+  background: var(--primary-gradient);
+  transition: all 0.3s ease;
+}
+
+.cmn-btn.primary-border {
+  border: 2px solid var(--primary-light);
+  background: transparent;
+}
+
+.cmn-btn.primary-border:hover {
+  background: var(--primary-gradient);
+} 
