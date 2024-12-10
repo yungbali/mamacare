@@ -1,4 +1,3 @@
-
 import ProductList from '@/components/product-list'
 import Wrapper from '@/layouts/Wrapper'
 import { Metadata } from 'next';
